@@ -1,0 +1,26 @@
+<h1>{{name}}</h1>
+<dl>
+    <td>Nombre:</td>
+    <dd>{{name}}</dd>
+
+    <td>Edad:</td>
+    <dd>{{edad}}</dd>
+
+    <td>Direccion:</td>
+    <dd>Direccion</dd>
+
+    <td>NumControl</td>
+    <dd>numControl</dd>
+        
+</dl>
+<button *ngIf="name==='Ricardo';"
+ (click)="cambiarAlumno()" 
+ class="btn btn-secondary mx-2">
+ Cambiar Nombre
+</button>
+<button *ngIf="edad===43"
+ (click)="cambiarEdad()" 
+ class="btn btn-dark mx-1">
+ Cambiar Edad
+</button>
+<button (click)="resetForm()" class="btn btn-warning mx-2">reset</button>

@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'inicio2';
+  public title:string = 'inicio';
+  public contador:number=10;
+  addCounter ():void{
+    this.contador+=1;
+  } 
+
+  subCounter ():void{
+    this.contador-=1;
+  } 
+  increntarPor(num:number):void{
+      this.contador+=num;
+  }
+  reset():void{
+    this.contador=10;
+  }
 }
